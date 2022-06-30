@@ -1,4 +1,4 @@
-baseurl: https://donhector.github.io/blog/
+baseurl: https://blog.darkenv.cloud/blog/
 languageCode: en-us
 theme: stack
 paginate: 5
