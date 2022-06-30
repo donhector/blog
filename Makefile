@@ -6,9 +6,6 @@ ifneq (,$(wildcard ./.env))
     export
 endif
 
-secrets:
-	@envsubst < config.yaml.tpl > config.yaml
-
 run:
 	@hugo server -D
 
