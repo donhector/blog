@@ -1,4 +1,4 @@
-baseurl: https://hmolina.darkenv.cloud
+baseurl: https://hmolina.dev
 languageCode: en-us
 theme: stack
 paginate: 5
@@ -199,17 +199,23 @@ menu:
       params:
         icon: brand-linkedin
 
-    - identifier: twitter
-      name: Twitter
-      url: https://twitter.com
-      params:
-        icon: brand-twitter
+    # - identifier: twitter
+    #   name: Twitter
+    #   url: https://twitter.com
+    #   params:
+    #     icon: brand-twitter
 
     - identifier: stackoverflow
       name: Stackoverflow
       url: https://stackoverflow.com/users/1806782/donhector
       params:
         icon: brand-stackoverflow
+
+    - identifier: email
+      name: Email
+      url: "mailto:info@hmolina.dev?subject=Inquiry"
+      params:
+        icon: mail
 
 related:
   includeNewer: true
