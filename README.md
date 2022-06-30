@@ -1,4 +1,4 @@
-# Personal site
+# Blog
 
 [![GH pages](https://github.com/donhector/donhector.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/donhector/donhector.github.io/actions/workflows/gh-pages.yml)
 
