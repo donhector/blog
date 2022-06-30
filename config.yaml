@@ -117,12 +117,12 @@ params:
 
     giscus:
       repo: donhector/donhector.github.io
-      repoID:
+      repoID: changeme
       category: Giscus
-      categoryID:
-      mapping:
-      lightTheme:
-      darkTheme:
+      categoryID: changeme
+      mapping: pathname
+      lightTheme: light
+      darkTheme: transparent_dark
       reactionsEnabled: 1
       emitMetadata: 0
 
