@@ -45,7 +45,7 @@ params:
 
   sidebar:
     emoji: ☁️
-    subtitle: Sr. DevOps engineer
+    subtitle: DevOps engineer
     avatar:
       enabled: true
       local: true
