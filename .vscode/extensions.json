@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "davidanson.vscode-markdownlint",
+    "timonwong.shellcheck",
+    "IronGeek.vscode-env",
+    "cschleiden.vscode-github-actions"
+  ]
+}
