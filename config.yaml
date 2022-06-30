@@ -1,4 +1,4 @@
-baseurl: https://blog.darkenv.cloud/blog/
+baseurl: https://darkenv.cloud
 languageCode: en-us
 theme: stack
 paginate: 5
