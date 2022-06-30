@@ -11,7 +11,7 @@ languages:
     weight: 1
 
 # Change it to your Disqus shortname before using
-disqusShortname: hmolina
+disqusShortname:
 
 # GA Tracking ID
 googleAnalytics:
@@ -33,7 +33,7 @@ params:
     - post
   featuredImageField: image
   rssFullContent: true
-  favicon: favicon/32x32.png
+  favicon: favicon/32.png
 
   footer:
     since: 2021
@@ -116,10 +116,10 @@ params:
       siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
     giscus:
-      repo: donhector/hmolina
-      repoID: changeme
+      repo: donhector/blog
+      repoID: # Value will be injected via environment var (see GH workflow file)
       category: Giscus
-      categoryID: changeme
+      categoryID: # Value will be injected via environment var (see GH workflow file)
       mapping: pathname
       lightTheme: light
       darkTheme: transparent_dark
