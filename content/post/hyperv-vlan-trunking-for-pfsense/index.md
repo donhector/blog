@@ -21,11 +21,11 @@ categories: [
 
 ## Intro
 
-I've recently ordered one of those [Protectli](https://protectli.com/product/vp2410/) like boxes from [Aliexpress](https://aliexpress.com/item/1005004302428997.html) to act as a Pfsense based physical router/firewall for my home network. The deal was too good to miss out during the Aliexpress Summer Sale. Way cheaper than the *Protectli* and comes with updated hardware: Intel Celeron N5105, 4x 2.5Gbe Ethernet ports, 8Gb RAM, 128Gb NVME, SIM slot (you could potentially use the SIM as redundant WAN gateway).
+I've recently ordered one of those [Protectli](https://protectli.com/product/vp2410/)-like boxes from [Aliexpress](https://aliexpress.com/item/1005004302428997.html) to act as a Pfsense based physical router/firewall for my home network. The deal was too good to miss out during the Aliexpress Summer Sale. Way cheaper than the *Protectli* or a similar *Netgate* and comes with updated hardware: Intel Celeron N5105, 4x 2.5Gbe Ethernet ports, 8Gb RAM, 128Gb NVME, SIM slot (you could potentially use the SIM as redundant WAN gateway).
 
 I paid just under 200 EUR including taxes and shipping.
 
-Since the item is coming from China it will take a while to get here, but in the meantime, I've already started configuring Pfsense.
+Since the item is coming from China it will take a while to get here, but in the meantime, I've already started configuring the OS: Pfsense.
 
 How, you might be wondering? Well, easy answer: Virtualization!
 
@@ -128,7 +128,7 @@ After that, our test VM providing VLAN ID 30 will now receive an address from th
 
 {{<figure src="client_vlan30_dhcp.png" caption="DHCP from VLAN30Updated adapter properties ">}}
 
-So that's how you do it. It would be great if Hyper-V could expose more networking options via UI but it is what it is (similar with Libvirt and VMManager!).
+So that's how you do it. It would be great if Hyper-V could expose more networking options via UI but it is what it is. Not really surprised by this as it's the exact same picture in Linux with Libvirt and VMManager, only a subset of settings is exposed via UI.
 
 Until next time!
 
