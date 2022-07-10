@@ -1,6 +1,6 @@
 ---
 title: "Moving away from Github Pages to Cloudflare Pages"
-description: In this post I go over the reasons why I moved this Hugo site from GH pages to CF pages
+description: The reasons why I moved
 date: 2022-07-03T01:04:32+02:00
 image: marc-olivier-jodoin-NqOInJ-ttqM-unsplash.jpg
 hidden: false
