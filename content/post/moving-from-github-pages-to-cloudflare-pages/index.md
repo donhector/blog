@@ -38,7 +38,7 @@ That was not a big deal and with some work I got everything automatically and su
 
 Then, since I was working on some [CloudFlare](https://www.cloudflare.com/) stuff (ie: [Zero Trust](https://www.cloudflare.com/products/zero-trust/)) for one of my side projects, I decided to give [CloudFlare Pages](https://pages.cloudflare.com/) a go at hosting my Hugo site, and in the end couldn't be happier with the experience and results.
 
-{{<figure src="drake.jpg" title="GH Pages vs CF Pages">}}
+![GH Pages vs CF Pages](drake.jpg)
 
 ## Reasons
 
@@ -101,9 +101,9 @@ jobs:
 
   ***NOTE:*** One annoying part here was that as soon as you have *Github Pages* enabled in your repo (ie: *Settings -> Pages -> Source `gh-pages` branch*) Github creates an "internal" workflow called `pages-build-deployment` that you as a user, cannot tweak in any way nor delete. That workflow alone does not know how to handle Hugo sites, so it is pretty useless, hence the need of our own workflow to deal with Hugo sites.
 
-  In CF pages you can pick from one of the multiple framework presets, including Hugo.
+  In CF pages you can pick from one of the multiple framework presets, including Hugo:
 
-  {{<figure src="pages_settings_builds_deployments.png"  width="90%" title="Pages Build Configuration">}}
+  ![Pages Build Configuration](pages_settings_builds_deployments.png)
 
 ### Simpler custom domain setup
 
@@ -137,18 +137,18 @@ jobs:
 
     - Bulk Redirects rules can be enriched using expressions to do cools things such redirecting based on Geolocation.
 
-    {{<figure src="dns.png" title="DNS records">}}
-    {{<figure src="bulk_redirects.png" title="Bulk Redirects">}}
-    {{<figure src="bulk_redirect_list.png" title="Bulk Redirect List">}}
-    {{<figure src="bulk_redirect_list_content.png" title="Bulk Redirect List Content">}}
+    ![DNS records](dns.png)
+    ![Bulk Redirects](bulk_redirects.png)
+
+    ![Bulk Redirect List](bulk_redirect_list.png)
+    ![Bulk Redirect List Content](bulk_redirect_list_content.png)
 
 ### No analytics
 
 - Github offers nothing in terms of analytics for your published pages. *CloudFlare* Pages offers a "one click" integration with their free Web Analytics (*Account Name -> Analytics -> Web Analytics -> Your website*)
 
-  {{<figure src="pages_settings_general.png" title="Pages Settings General">}}
-
-  {{<figure src="pages_analytics.png" title="Web Analytics">}}
+  ![Pages Settings General](pages_settings_general.png)
+  ![Web Analytics](pages_analytics.png)
 
 ### Not as nice multi-environment setup
 
@@ -168,9 +168,9 @@ jobs:
 
     See [documentation](https://developers.cloudflare.com/pages/how-to/custom-branch-aliases/)
 
-  {{<figure src="pages.png" title="Pages dashboard">}}
-  {{<figure src="pages_custom_domains.png" title="Pages Custom Domains">}}
-  {{<figure src="pages_env_vars.png" title="Pages Environment Variables">}}
+  ![Pages dashboard](pages.png)
+  ![Pages Custom Domains](pages_custom_domains.png)
+  ![Pages Environment Variables](pages_env_vars.png)
 
 ### Not as nice build/deploy feedback
 
@@ -178,9 +178,9 @@ jobs:
 
 - *CloudFlare*'s Pages does not create an Environment in Github, it instead reports feedback in the form of comments to your Pull Requests in Github. Additionally in the *CloudFlare* Pages website, it keeps a detailed history of all your deployments, their status and build logs.
 
-  {{<figure src="pages_github_integration.png" title="Pages Github Integration">}}
-  {{<figure src="pages_deployments.png" title="Pages Deployments">}}
-  {{<figure src="pages_build_log.png" title="Pages Build Logs">}}
+  ![Pages Github Integration](pages_github_integration.png)
+  ![Pages Deployments](pages_deployments.png)
+  ![Pages Build Logs](pages_build_log.png)
 
 ## Closing
 
