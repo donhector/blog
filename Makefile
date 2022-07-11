@@ -12,4 +12,4 @@ run:
 build:
 	@hugo --minify
 
-.PHONY: secrets run build
+.PHONY: run build
