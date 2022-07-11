@@ -5,7 +5,6 @@ date: 2022-07-1
 aliases:
   - about-us
   - contact
-license: CC BY-NC-ND
 lastmod: 2022-07-11
 menu:
     main:
