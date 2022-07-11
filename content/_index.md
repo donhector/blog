@@ -6,7 +6,3 @@ menu:
         params:
             icon: home
 ---
-
-> Man is most nearly himself when he achieves the seriousness of a child at play.
-
--- Heraclitus
