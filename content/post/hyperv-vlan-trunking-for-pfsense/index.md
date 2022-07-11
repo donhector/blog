@@ -6,7 +6,7 @@ image: vlan.webp
 math: false
 hidden: false
 comments: true
-draft: true
+draft: false
 tags: [
     "hyperv",
     "powershell",
