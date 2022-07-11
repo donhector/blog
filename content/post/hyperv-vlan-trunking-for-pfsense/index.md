@@ -98,6 +98,8 @@ Output looks like:
 
 That means that the Pfsense VM network adapters are expecting untagged traffic, but our test client VM is sending tagged traffic (ie. VLAN 30). That's our problem.
 
+## Solution
+
 To fix this, we need to configure the virtual network adapter that is backing the Pfsense VLAN 30 interface (*Interfaces -> Assignments*) so that is trunked to the desired VLAN(s). Have its MAC address handy as we will be using it in the next step.
 
 {{<figure src="pfsense-assignments.png" caption="Interface Assignments">}}
@@ -107,7 +109,9 @@ To fix this, we need to configure the virtual network adapter that is backing th
 To set the adapter in *Trunk* mode, we need to run Powershell as those settings are not exposed in Hyper-V's UI:
 
 ```powershell
-Get-VMNetworkAdapter -VMName "pfsense-0" | Where-Object -property macaddress -eq "00155d500107" | Set-VMNetworkAdapterVlan -Trunk -AllowedVlanIdList "10,20,30,90" -NativeVlanId 1
+Get-VMNetworkAdapter -VMName "pfsense-0" |
+  Where-Object -property macaddress -eq "00155d500107" |
+    Set-VMNetworkAdapterVlan -Trunk -AllowedVlanIdList "10,20,30,90" -NativeVlanId 1
 ```
 
 Where:
