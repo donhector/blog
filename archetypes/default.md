@@ -2,6 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 description:
 date: {{ .Date }}
+lastmod:
 image:
 math: false
 license:
@@ -14,4 +15,9 @@ tags: [
 categories: [
     "default",
 ]
+links:
+  - title:
+    description:
+    website: https://
+    image: https://
 ---

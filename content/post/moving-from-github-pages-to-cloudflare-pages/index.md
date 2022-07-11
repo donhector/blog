@@ -1,6 +1,6 @@
 ---
 title: "Moving away from Github Pages to Cloudflare Pages"
-description: The reasons why I moved
+description: Some of the reasons why I moved
 date: 2022-07-03T01:04:32+02:00
 image: marc-olivier-jodoin-NqOInJ-ttqM-unsplash.jpg
 hidden: false
@@ -17,6 +17,15 @@ tags: [
 categories: [
     "services",
 ]
+links:
+  - title: GitHub
+    description: GitHub is the world's largest software development platform.
+    website: https://github.com
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: CloudFlare Pages
+    description: Cloudflare Pages is a JAMstack platform for frontend developers to collaborate and deploy websites.
+    website: https://pages.cloudflare.com/
+    image: https://pages.cloudflare.com/resources/logo/logo.svg
 ---
 
 ## Intro
@@ -94,7 +103,7 @@ jobs:
 
   In CF pages you can pick from one of the multiple framework presets, including Hugo.
 
-  {{<figure src="pages_settings_builds_deployments.png" title="Pages Build Configuration">}}
+  {{<figure src="pages_settings_builds_deployments.png"  width="90%" title="Pages Build Configuration">}}
 
 ### Simpler custom domain setup
 
