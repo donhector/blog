@@ -49,11 +49,9 @@ I've setup a small virtual home lab in Hyper-V with:
 
 Here are some captures:
 
-{{<figure src="switch_manager.png" caption="Virtual Switch Manager">}}
-
-{{<figure src="pfsense-0_adapters.png" caption="Pfsense VM network adapters">}}
-
-{{<figure src="client_adapter.png" caption="Client VM network adapter">}}
+![Virtual Switch Manager](switch_manager.png)
+![Pfsense VM network adapters](pfsense-0_adapters.png)
+![Client VM network adapter](client_adapter.png)
 
 This worked well as it is.
 
@@ -78,7 +76,7 @@ As part of my Pfsense configuration I have 3 VLANs, with IDs 10, 20, and 30. Eac
 
 In order to test that, I've set the VLAN ID to 30 in one of the client VMs, and rebooted.
 
-{{<figure src="client_adapter_vlan.png" caption="Client VM network adapter VLAN settings">}}
+![Client VM network adapter VLAN settings](client_adapter_vlan.png)
 
 Theory says it should get an IP in the 10.1.30.1/24 range but... **it didn't!!**
 
@@ -95,7 +93,7 @@ Get-VMNetworkAdapterVlan -VMName "pfsense-0"
 
 Output looks like:
 
-{{<figure src="pfsense-0_adapters_settings.png" caption="Default adapter properties ">}}
+![Default adapter properties](pfsense-0_adapters_settings.png)
 
 That means that the Pfsense VM network adapters are expecting untagged traffic, but our test client VM is sending tagged traffic (ie. VLAN 30). That's our problem.
 
@@ -103,7 +101,7 @@ That means that the Pfsense VM network adapters are expecting untagged traffic, 
 
 To fix this, we need to configure the virtual network adapter that is backing the Pfsense VLAN 30 interface (*Interfaces -> Assignments*) so that is trunked to the desired VLAN(s). Have its MAC address handy as we will be using it in the next step.
 
-{{<figure src="pfsense-assignments.png" caption="Interface Assignments">}}
+![Interface Assignments](pfsense-assignments.png)
 
 **NOTE:** We use the MAC to filter out which of the 3 interfaces is the one we want as Hyper-V names them all the same (ie: Network Adapter) if you created them via Hyper-V's UI. Renaming virtual adapters is out of scope in this post.
 
@@ -127,11 +125,11 @@ Where:
 
 After running the command you should see something like in the capture below.
 
-{{<figure src="pfsense-0_adapters_settings_after.png" caption="Updated adapter properties ">}}
+![Updated adapter properties](pfsense-0_adapters_settings_after.png)
 
 After that, our test VM providing VLAN ID 30 will now receive an address from the VLAN 30 DHCP server. In this case 10.100.30.x
 
-{{<figure src="client_vlan30_dhcp.png" caption="DHCP from VLAN30Updated adapter properties ">}}
+![DHCP from VLAN30 updated adapter properties](client_vlan30_dhcp.png)
 
 So that's how you do it. It would be great if Hyper-V could expose more networking options via UI but it is what it is. Not really surprised by this as it's the exact same picture in Linux with Libvirt and VMManager, only a subset of settings is exposed via UI.
 
