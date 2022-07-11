@@ -2,6 +2,7 @@
 title: "Hyper-V VLAN Trunking for Pfsense"
 description: Enabling trunking on a Hyper-V Network Adapter
 date: 2022-07-05T20:03:23+02:00
+lastmod: 2022-07-11
 image: vlan.webp
 math: false
 hidden: false
