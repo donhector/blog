@@ -24,3 +24,9 @@ When not at work, you can find me, riding my bike, having fun with my labradoodl
 ## Contact
 
 Use the social icons in the left hand side menu to reach out to me.
+
+---
+
+> *"We are most nearly ourselves when we achieve the seriousness of the child at play."*
+>
+> -- [Heraclitus](https://en.wikipedia.org/wiki/Heraclitus)
