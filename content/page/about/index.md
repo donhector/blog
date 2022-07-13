@@ -2,6 +2,7 @@
 title: About
 description: Quis es
 date: 2022-07-1
+comments: false
 aliases:
   - about-us
   - contact
