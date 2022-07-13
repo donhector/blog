@@ -17,6 +17,7 @@ tags: [
 ]
 categories: [
     "homelab",
+    "services"
 ]
 links:
   - title: Cloudflared
