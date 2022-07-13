@@ -4,6 +4,6 @@ description: "A place where I can try out new things, self-host, learn new techn
 slug: "homelab"
 image: "homelab.png"
 style:
-    background: "#2a9d8f"
+    background: "#ee8100"
     color: "#fff"
 ---
