@@ -166,8 +166,8 @@ Something I need to try next is running *kubectl* against the K8s cluster at hom
 
 While there's no native support yet in OpenWRT for *cloudflared* is pretty easy to get it working on the command line and create an *init.d* service that ensures that it is always running.
 
-Overall I'm really impressed with *cloudflared* capabilities, flexibility, lightness, integrations and ease of use. At no given time I had to deal with DDNS, ports or touch firewall rules in my home network. Definitely a much safer than other alternatives that require opening ports.
+Overall, I'm really impressed with *cloudflared*'s capabilities, flexibility, lightness, integrations and ease of use. At no given time I had to deal with DDNS, ports or touch firewall rules in my home network. Definitely much safer than other alternatives (ie: reverse proxy) that require opening ports.
 
-If that was not enough, you can even automate the web GUI setup using [Cloudflare's Terraform provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs).
+And if that was not enough, you can even automate the web GUI setup using [Cloudflare's Terraform provider](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs).
 
-Give *cloudflared* and the whole *Zero Trust* platform a try, it's worth exploring.
+Give *cloudflared* and the whole *Zero Trust* platform a try, it's worth exploring and does not cost a dime if you don't want to.
