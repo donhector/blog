@@ -23,7 +23,7 @@ When not at work, you can find me riding my bike, having fun with my lovely dog,
 
 ## Contact
 
-Please use the social icons in the left hand side menu to reach out to me.
+Use the social icons underneath my picture to reach out to me.
 
 ---
 
