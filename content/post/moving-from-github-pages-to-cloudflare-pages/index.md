@@ -186,7 +186,7 @@ jobs:
 
 I was quite pleased with the *CF Pages* experience and features. *CF Pages* adapted easily to my Hugo project, whereas in *GH Pages* it was my project that needed to adapt.
 
-Thanks to integrations with other *CloudFlare* services such as Web Analytics, DNS, and Bulk Redirects, you have a holistic way to manage you site.
+Thanks to integrations with other *CloudFlare* services such as Web Analytics, DNS, and Bulk Redirects, you have a holistic way to manage your site.
 
 All in all, I'm pretty happy with the move. In addition you get nice PR comments in Github when your site is built and deployed.
 
