@@ -220,7 +220,7 @@ menu:
 
     - identifier: email
       name: Email
-      url: "mailto:hector@hmolina.dev"
+      url: "mailto:contact@hmolina.dev"
       params:
         icon: mail
 
